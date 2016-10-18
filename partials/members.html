@@ -1,0 +1,46 @@
+<h1>Members</h1>
+<div style="height: 40px; border-bottom: 1px solid lightgrey;">
+  Filter By : <input type="date"
+               style="height: 15px;"
+                ng-model="startDate"/>
+               to 
+              <input type="date" 
+              style="height: 15px;"
+                ng-model="endDate"/>
+  <button 
+    type="button" 
+	  style="width: 80px;"
+	  ng-click="filterMembers();">
+	  Apply
+  </button>
+     
+  <button 
+    type="button" 
+	  style="width: 80px;"
+	  ng-click="fetchAllMembers();">
+	  Show All
+  </button>   
+</div>
+
+<div ng-if='recordsNotFound' class="ng-cloak">
+<h2 style="color:red">{{msg}}</h2>
+</div>
+
+<div ng-if='recordsFound'>
+  <div>
+    <table style="width:100%">  
+  
+    <tr>
+      <th>Name</th>
+      <th>Membership Start Date</th>
+    </tr>
+      
+    <tr ng-repeat="member in members">
+      <td>{{member.membership_name}}</td>
+      <td>{{member.start_date}}</td>
+    </tr>   
+  
+    </table>
+  <div>   
+</div>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<extension key="org.civicrm.members" type="module">
+  <file>members</file>
+  <name>Members List</name>
+  <description>Shows members by members date</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>Atul Shimpi</author>
+    <email>shimpiatul@hotmail.com</email>
+  </maintainer>
+  <releaseDate>2016-10-15</releaseDate>
+  <version>1.3</version>
+  <develStage>alpha</develStage>
+  <compatibility>
+    <ver>4.3</ver>
+  </compatibility>
+  <comments>Module for testing and learning purpose of build kit</comments>
+  <civix>
+    <namespace>CRM/Members</namespace>
+  </civix>
+</extension>
